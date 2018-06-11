@@ -1,0 +1,78 @@
+body {
+    background-color: #e1c8b2;
+}
+#header {
+    /* ***FIXME***
+     * The background-color of 'header' is same as 'body'
+     * I don't know why this isn't taking affect like it should.
+     */
+    background-color: #fff;
+}
+.headerContent {
+    width: 960px;
+    margin-left: 50px;
+}
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.headerName {
+    float: left;
+    padding: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7b9ea4;
+}
+nav {
+    /* ***FIXME***
+     * For some reason (?) there is 
+     * padding to the right. it should line up
+     * with the edge of 'content'.
+     */
+    float: right;
+    padding-top: 3em;
+}
+ul.menu li {
+    display: inline;
+}
+ul.menu li a {
+    text-decoration: none;
+    color: #995b28;
+}
+ul.menu li a:hover {
+    color: #34220c;
+}
+.photoBox {
+    float: left;
+    width: 175px;
+    height: 200px;
+}
+#mePhoto {
+    width:150px;
+    height:200px;
+}
+.content {
+    clear: both;
+    width: 960px;
+    margin-left: 50px;
+    padding: 2em;
+    color: #995b28;
+    background-color: #ffffff;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7b9ea4;
+    padding-right: 2em;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1em;
+    padding-right: 2em;
+}
