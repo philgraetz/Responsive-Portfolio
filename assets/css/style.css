@@ -2,15 +2,16 @@ body {
     background-color: #e1c8b2;
 }
 #header {
-    /* ***FIXME***
+    /*
      * The background-color of 'header' is same as 'body'
      * I don't know why this isn't taking affect like it should.
      */
     background-color: #fff;
 }
 .headerContent {
-    width: 960px;
-    margin-left: 50px;
+    /* width: 960px; */
+    margin-left: 3em;
+    margin-right: 3em;
 }
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
@@ -47,19 +48,12 @@ ul.menu li a {
 ul.menu li a:hover {
     color: #34220c;
 }
-.photoBox {
-    float: left;
-    width: 175px;
-    height: 200px;
-}
-#mePhoto {
-    width:150px;
-    height:200px;
-}
 .content {
     clear: both;
     width: 960px;
-    margin-left: 50px;
+    overflow: auto;
+    margin-top: 1em;
+    margin-left: 3em;
     padding: 2em;
     color: #995b28;
     background-color: #ffffff;
@@ -71,8 +65,31 @@ h1 {
     color: #7b9ea4;
     padding-right: 2em;
 }
+#aboutMe {
+    /* padding-left: 1em; */
+    /* margin-bottom: 1em; */
+    /* padding-right: 2em; */
+}
 p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 1em;
-    padding-right: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.photoBox {
+    float: left;
+    overflow: visible;
+    /* width: 400px; */
+    /* height: 300px; */
+    margin-right: 1em;
+    /* margin-bottom: 1em; */
+}
+#mePhoto {
+    width:280px;
+}
+.formInput {
+    width: 100%;
+}
+#message {
+    rows: 10;
+    height: 10em;
 }

@@ -11,6 +11,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <!-- Nav Bar -->
     <div id="header">
         <div class="headerContent clearfix">
             <div class="headerName">Phil Graetz</div>
@@ -23,10 +24,23 @@
             </nav>
         </div>
     </div>
+
     <section class="content">
         <h1>Contact</h1>
         <hr>
-        Some contact info here...    
+        <form>
+            First name:<br>
+            <input class="formInput" type="text" name="name" placeholder="Enter name">
+            <br><br>
+            Email:<br>
+            <input class="formInput" type="email" name="email" placeholder="example@gmail.com">
+            <br><br>
+            Message:<br>
+            <textarea class="formInput" id="message">
+            </textarea>
+            <br><br>
+            <input type="submit" value="Submit">        
+        </form>
     </section>
     </body>
 </html>
