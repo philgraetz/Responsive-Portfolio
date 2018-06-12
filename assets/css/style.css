@@ -2,16 +2,11 @@ body {
     background-color: #e1c8b2;
 }
 #header {
-    /*
-     * The background-color of 'header' is same as 'body'
-     * I don't know why this isn't taking affect like it should.
-     */
     background-color: #fff;
 }
 .headerContent {
-    /* width: 960px; */
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
@@ -30,11 +25,6 @@ body {
     background-color: #7b9ea4;
 }
 nav {
-    /* ***FIXME***
-     * For some reason (?) there is 
-     * padding to the right. it should line up
-     * with the edge of 'content'.
-     */
     float: right;
     padding-top: 3em;
 }
@@ -48,12 +38,16 @@ ul.menu li a {
 ul.menu li a:hover {
     color: #34220c;
 }
-.content {
+    .contentBox {
     clear: both;
     width: 960px;
     overflow: auto;
+}
+.content {
+    clear: both;
+    overflow: auto;
     margin-top: 1em;
-    margin-left: 3em;
+    margin-left: 1em;
     padding: 2em;
     color: #995b28;
     background-color: #ffffff;
@@ -65,11 +59,6 @@ h1 {
     color: #7b9ea4;
     padding-right: 2em;
 }
-#aboutMe {
-    /* padding-left: 1em; */
-    /* margin-bottom: 1em; */
-    /* padding-right: 2em; */
-}
 p {
     margin-bottom: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -77,11 +66,23 @@ p {
 }
 .photoBox {
     float: left;
-    overflow: visible;
-    /* width: 400px; */
-    /* height: 300px; */
+    width: 280px;
+    height: 220px;
     margin-right: 1em;
-    /* margin-bottom: 1em; */
+}
+.photo {
+    width: 280px;
+    z-index: 1;
+}
+.photoBanner {
+    color: #fff;
+    background-color: #7b9ea4;
+    padding: .5em;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    z-index: 2;
+    overflow: visable;
 }
 #mePhoto {
     width:280px;
@@ -93,3 +94,19 @@ p {
     rows: 10;
     height: 10em;
 }
+
+/*** Responsive CSS ***/
+@media screen and (max-width: 980px) {
+    .contentBox {
+        width: 748px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contentBox {
+        width: 620px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .contentBox {
+        width: 360px;
+    }
